@@ -118,6 +118,8 @@ class AuthModal {
             this.popupDesc = document.getElementById('popup-desc') as HTMLElement;
             
             this.setupEventListeners();
+
+            setTimeout(() => this.openPopup(), 100);
             
             this.isInitialized = true;
             console.log('AuthModal initialized successfully');
